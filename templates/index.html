@@ -7,7 +7,6 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #e2e2e2, #ffffff);
             color: #333;
             display: flex;
             justify-content: center;
@@ -20,7 +19,7 @@
         .container {
             background: #ffffff;
             border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             padding: 30px;
             max-width: 600px;
             width: 100%;
@@ -32,7 +31,7 @@
         }
 
         .container:hover {
-            box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
         }
 
         h1 {
@@ -124,5 +123,19 @@
         <p id="dustDensity">Dust Density: Loading...</p>
         <p id="gasConcentration">Gas Concentration: Loading...</p>
     </div>
+   <script>
+        function changeBackgroundColor() {
+            const colors = [ "0000FF" ]
+            const randomIndex = Math.floor(Math.random() * colors.length);
+            document.body.style.backgroundColor = colors[randomIndex];
+        }
+
+        // Use a transition to smoothly change the background color
+        setInterval(() => {
+            const newColor = changeBackgroundColor();
+            document.body.style.transition = "background-color 2s ease-in-out";
+            document.body.style.backgroundColor = newColor;
+        }, 2000); // Change color every 2 seconds
+    </script>
 </body>
 </html>
