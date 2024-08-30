@@ -49,9 +49,9 @@ def data():
 
     b=[50,51,52,53,54,55,56,57,58,59,60,61,62,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,50,51,52,53,54,55,56,57,58,59,60,61,62,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,50,51,52,53,54,55,56,57,58,59,60,61,62,63,62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47]
     #b=[27,28,29,30,31,32,26,27,27,28,29,30,29,28,27,26,25,27,28,29,30,31,32,26,27,27,28,29,30,29,28,27,26,25,27,28,29,30,31,32,26,27,27,28,29,30,29,28,27,26,25,27,28,29,30,31,32,26,27,27,28,29,30,29,28,27,26,25,27,28,29,30,31,32,26,27,27,28,29,30,29,28,27,26,25]
-   gasConcentration = random.choice(a)
-   Dustdensity=random.choice(b)
-   return f"Dust Density: {gasConcentration}\nGas Concentration: {Dustdensity}"
+    gasConcentration = random.choice(a)
+    Dustdensity=random.choice(b)
+    return f"Dust Density: {gasConcentration}\nGas Concentration: {Dustdensity}"
       
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000, debug=True)
